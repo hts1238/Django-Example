@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat';
+}
+
+main {
+    padding: 12px 36px;
+}
+
+main > .news-list {
+    padding-left: 12px;
+    line-height: 2rem;
+}
+
+main > .news-list b {
+    font-size: 1.3rem;
+}
+
+main > .pagination {
+    margin-top: 24px;
+}

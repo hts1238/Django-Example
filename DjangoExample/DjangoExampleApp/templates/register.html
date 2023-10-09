@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <label>
+        Username: <input type="text" name="username" required>
+    </label><br><br>
+    <label>
+        First name: <input type="text" name="first_name">
+    </label><br><br>
+    <label>
+        Last name: <input type="text" name="last_name">
+    </label><br><br>
+    <label>
+        Email: <input type="email" name="email" required>
+    </label><br><br>
+    <label>
+        Password: <input type="password" name="password" required>
+    </label><br><br>
+    <label>
+        Confirm: <input type="password" name="confirm" required>
+    </label><br><br>
+    <input type="submit" value="Register">
+</form>
+
+{% endblock content %}

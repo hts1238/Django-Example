@@ -1,0 +1,14 @@
+menu {
+    background-color: #22f;
+    width: 100%;
+    padding: 24px 36px;
+    margin: 0;
+    font-size: 2em;
+
+    display: flex;
+    gap: 16px;
+}
+
+menu > a {
+    color: white;
+}

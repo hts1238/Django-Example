@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{ news.title }}</h1>
+<h2>{{ news.get_date }} by {{ news.author.name }}{% if news.hidden %} <span style="color:gray;"><i>[hidden]</i></span>{% endif %}</h2>
+
+<p>{{ news.content }}</p>
+
+{% endblock content %}

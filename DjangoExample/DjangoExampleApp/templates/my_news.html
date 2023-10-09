@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if news_list %}
+    <div class="news-list">
+    {% for news in news_list %}
+        <a href="/news/{{ news.id }}"><b>{{ news.title }}</b> ({{ news.get_date }} by {{ news.author.name }}){% if news.hidden %} <i>[hidden]</i>{% endif %}</a><br>
+    {% endfor %}
+    </div>
+{% else %}
+    <p>There are no any news</p>
+{% endif %}
+
+{% endblock content %}
